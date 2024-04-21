@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+    margin: 1.2rem;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.name {
+    font-size: 1.8rem;
+}
+
+.text {
+    text-align: left;
+}
+
+.text p {
+    font-size: 1.2rem;
+}
+
+.gallery {
+    align-items: center;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.system button {
+    width: 48%;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    margin: 1rem 0;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.translate {
+    background: linear-gradient(to right, hsl(259, 88%, 20%), hsl(235, 54%, 50%));
+}
+
+.next {
+    background: linear-gradient(to left, hsl(259, 88%, 20%), hsl(235, 54%, 50%));
+}
+
+.translate:hover {
+    background: linear-gradient(to right, hsl(259, 87%, 15%), hsl(235, 54%, 45%));
+}
+
+.next:hover {
+    background: linear-gradient(to left, hsl(259, 88%, 15%), hsl(235, 54%, 45%));
+}
+
+.slider1, .slider2, .slider3, .slider4, .slider5, .slider6, .slider7 {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider1 img, .slider2 img, .slider3 img, .slider4 img, .slider5 img, .slider6 img, .slider7 img {
+    display: none;
+}
+
+.slider1 img.displaySlide, .slider2 img.displaySlide, .slider3 img.displaySlide, .slider4 img.displaySlide, .slider5 img.displaySlide, .slider6 img.displaySlide, .slider7 img.displaySlide {
+    display: block;
+    animation: fade;
+    animation-duration: 1.5s;
+}
+
+.slider1 button, .slider2 button, .slider3 button, .slider4 button, .slider5 button, .slider6 button, .slider7 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.previousImg {
+    left: 0;
+}
+
+.nextImg {
+    right: 0;
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .system button {
+        width: 45%;
+        height: 2.2rem;
+        font-size: 1rem;
+        margin: 0.4rem;
+    }
+
+    .gallery img {
+        margin: -0.5rem 0 0.5rem;
+    }
+}
