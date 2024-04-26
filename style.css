@@ -3,7 +3,8 @@
 body {
     font-family: "Fira Sans", sans-serif;
     text-align: center;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(233, 33%, 94%);
+    transition: background-color 0.5s ease;
 }
 
 .header {
@@ -25,8 +26,8 @@ body {
 
 .title {
     font-size: 2.8rem;
-    width: 43rem;
     font-weight: bold;
+    transition: color 0.5s ease;
 }
 
 .container {
@@ -38,6 +39,7 @@ body {
 
 .name {
     font-size: 1.8rem;
+    transition: color 0.5s ease;
 }
 
 .text {
@@ -46,6 +48,7 @@ body {
 
 .text p {
     font-size: 1.2rem;
+    transition: color 0.5s ease;
 }
 
 .gallery {
