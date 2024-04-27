@@ -136,6 +136,14 @@ body {
     color: hsl(0, 0%, 86%);
 }
 
+.darkMode .translate:hover {
+    background: linear-gradient(to right, hsl(259, 87%, 25%), hsl(235, 54%, 55%));
+}
+
+.darkMode .next:hover {
+    background: linear-gradient(to left, hsl(259, 88%, 25%), hsl(235, 54%, 55%));
+}
+
 @keyframes fade {
     from {opacity: .5}
     to {opacity: 1}

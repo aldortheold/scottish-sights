@@ -6,7 +6,7 @@ for (let i = 0; i < 7; i++) {
     slideIndexes.push(0);
     intervalIds.push(null);
     slides.push(document.querySelectorAll(`.slides${i + 1} img`));
-    document.addEventListener("DOMContentLoaded", initializeSlider(i));
+    document.addEventListener("DOMContentLoaded", () => initializeSlider(i));
 }
 
 function initializeSlider(slide) {
@@ -21,7 +21,7 @@ function showSlide(slide, index) {
         slideIndexes[slide] = 0;
     }
     else if (index < 0) {
-        slideIndexes[slide] = slides[slide].length - 1
+        slideIndexes[slide] = slides[slide].length - 1;
     }
     slides[slide].forEach(img => {
         img.classList.remove("displaySlide");
