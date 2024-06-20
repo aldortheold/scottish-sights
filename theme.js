@@ -19,7 +19,7 @@ function disableDarkMode() {
 if (darkMode == "enabled") {
     enableDarkMode();
     modeImg.src = "img/dark_mode.png";
-    modeImg.alt = "🌚"
+    modeImg.alt = "🌚";
 }
 
 modeToggle.addEventListener("click", () => {
@@ -30,4 +30,4 @@ modeToggle.addEventListener("click", () => {
     else {
         disableDarkMode();
     }
-})
+});
