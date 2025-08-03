@@ -128,12 +128,23 @@ body {
     right: 0;
 }
 
+svg {
+    height: 2.8rem;
+    fill: #000000;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
 .darkMode {
     background-color: hsl(0, 0%, 8%);
 }
 
 .darkMode h1, .darkMode h2, .darkMode p {
-    color: hsl(0, 0%, 86%);
+    color: #dbdbdb;
+}
+
+.darkMode svg {
+    fill: #dbdbdb;
 }
 
 .darkMode .translate:hover {
@@ -155,7 +166,7 @@ body {
         flex-direction: column;
     }
 
-    .header img {
+    svg {
         height: 2rem;
     }
 
